@@ -19,9 +19,10 @@ int main(){
 
     int b =(int) a;
     float c = a-(float)b;
-
+    float d = c*1000;
     printf("%d\n",b);
-    printf("%0.3f\n",c);
+
+    printf(".%.0f\n",d);
 
     return 0;
 }
