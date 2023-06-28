@@ -20,7 +20,7 @@ int main(){
 
     f= (c*1.8)+32;
 
-    printf("emperature in Fahrenheit = %.1f F",f);
+    printf("Temperature in Fahrenheit = %.1f F",f);
 
 
     return 0;
