@@ -11,18 +11,28 @@ Output:
 */
 
 #include<stdio.h>
+#include<string.h>
 int main(){
 
 
     int n;
     scanf("%d",&n);
-    int i=0,a[n];
-
+    int i=0,a[n],b[n],c[n];
+    
     while(i<n){
         scanf("%d",&a[i]);
         i++;
     }
-    for(int i=n-1; i>=0; i--){
-        printf("%d ",a[i]);
+    //b is reverse
+    for(i=0; i<n; i++){
+        b[i] = a[n-1-i];
+        
+    }
+    for(int i=0; i<n; i++){
+        c[i] =b[i]-a[i];
+        if(c[i] <0){
+            c[i] *=-1;
+        }
+        printf("%d ",c[i]);
     }
 }
